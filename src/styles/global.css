@@ -13,6 +13,7 @@ body {
 
 header {
     display: flex;
+    justify-content: space-between;
 }
 
 * {
@@ -42,7 +43,7 @@ h1 {
 
 .nav-links a {
     display: block;
-    text-align: center;
+    text-align: left;
     padding: 10px 0;
     text-decoration: none;
     font-size: 1.2rem;
@@ -53,14 +54,34 @@ h1 {
 
 .nav-links a:hover,
 .nav-links a:focus {
-    background-color: #ff9776;
+    padding-left: 10px;
+}
+
+.menu-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: #cecde2;
+    display: none;
+    z-index: 999;
 }
 
 :has(.menu[aria-expanded="true"]) .nav-links {
     display: unset;
 }
 
+:has(.menu[aria-expanded="true"]) .menu-overlay {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
 @media screen and (min-width: 636px) {
+    .menu-overlay {
+        position: static;
+        display: block;
+        background: transparent;
+    }
+
     .nav-links {
         margin-left: 5em;
         display: block;
