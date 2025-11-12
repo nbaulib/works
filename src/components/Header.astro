@@ -6,16 +6,28 @@
     <h1>Nico Bautista-Libreros</h1>
     <nav>
         <ul>
-            <li>Design</li>
-            <li>Web</li>
+            <li><a href="">Design</a></li>
+            <li><a href="">Web</a></li>
         </ul>
     </nav>
+    <section id="teaching">
+        <h3></h3>
+        <p>Teaching middle schoolers</p>
+        <ul>
+            <li>Game Design</li>
+            <li>Robotics</li>
+            <li>Data Science</li>
+        </ul>
+    </section>
+
+    <section id="about">
+        <p>NYC based. Loves visual and interactive design.</p>
+    </section>
 </div>
 
 <style>
     #container {
         display: flex;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         justify-content: space-between;
     }
 
@@ -31,5 +43,18 @@
 
     nav li {
         margin: 5px;
+        font-size: 1.1rem;
+    }
+
+    #teaching,
+    #about {
+        display: none;
+    }
+ 
+    @media (min-width: 800px) {
+        #teaching,
+        #about {
+            display: block;
+        }
     }
 </style>
