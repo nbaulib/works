@@ -26,29 +26,33 @@
 </div>
 
 <style>
-    #container {
-        display: flex;
-        justify-content: space-between;
-    }
+    /* mobile */
 
-    nav {
-        display: inherit;
-        align-items: center;
-    }
+    @media (min-width: 600px) {
+        #container {
+            display: flex;
+            justify-content: space-between;
+        }
 
-    nav ul {
-        display: inherit;
-        list-style-type: none;
-    }
+        nav {
+            display: inherit;
+            align-items: center;
+        }
 
-    nav li {
-        margin: 5px;
-        font-size: 1.1rem;
-    }
+        nav ul {
+            display: inherit;
+            list-style-type: none;
+        }
 
-    #teaching,
-    #about {
-        display: none;
+        nav li {
+            margin: 5px;
+            font-size: 1.1rem;
+        }
+
+        #teaching,
+        #about {
+            display: none;
+        }
     }
 
     @media (min-width: 800px) {
