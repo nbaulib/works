@@ -10,7 +10,7 @@
             <li><a href="">Web</a></li>
         </ul>
     </nav>
-    <section>
+    <section id="teaching">
         <h3></h3>
         <p>Teaching middle schoolers</p>
         <ul>
@@ -20,13 +20,41 @@
         </ul>
     </section>
 
-    <section>
+    <section id="about">
         <p>NYC based. Loves visual and interactive design.</p>
     </section>
 </div>
 
 <style>
     #container {
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav {
+        display: inherit;
+        align-items: center;
+    }
+
+    nav ul {
+        display: inherit;
+        list-style-type: none;
+    }
+
+    nav li {
+        margin: 5px;
+        font-size: 1.1rem;
+    }
+
+    #teaching,
+    #about {
+        display: none;
+    }
+ 
+    @media (min-width: 800px) {
+        #teaching,
+        #about {
+            display: block;
+        }
     }
 </style>
