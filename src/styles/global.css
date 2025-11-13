@@ -109,9 +109,11 @@ header h1 {
         /* width: auto; */
         /* background: none; */
     }
+
     .social-links {
         display: none;
     }
+
     .nav-links a {
         display: inline-block;
         padding: 15px 20px;
