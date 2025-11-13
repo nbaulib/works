@@ -71,10 +71,13 @@ header h1 {
     text-align: right;
 }
 
-.nav-links a:hover,
-.nav-links a:focus {
-    /* padding-left: 10px; */
+ @media screen and (max-width: 636px) {
+    .nav-links a:hover,
+    .nav-links a:focus {
+        padding-left: 10px;
+    }
 }
+
 
 .menu-overlay {
     position: fixed;
@@ -122,7 +125,7 @@ header h1 {
 
     .nav-links a:hover,
     .nav-links a:focus {
-        /* display: none; */
+        color: aqua;
     }
 
 
