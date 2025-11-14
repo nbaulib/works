@@ -219,4 +219,4 @@ const all = [
         tags: ["instagram"],
     },
 ];
-export const items = all;
+export default all;
