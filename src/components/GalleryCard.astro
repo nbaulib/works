@@ -26,11 +26,7 @@ const isAnimated = imagePath.endsWith(".avif");
   <a href={href} class="button">
     {
       isAnimated ? (
-        <img
-          src={imagePath}
-          alt={altText}
-          loading="lazy"
-        />
+        <img src={imagePath} alt={altText} loading="lazy" />
       ) : (
         <Image src={images[imagePath]()} alt={altText} format="avif" />
       )
@@ -38,22 +34,3 @@ const isAnimated = imagePath.endsWith(".avif");
     <p>{title}</p>
   </a>
 </div>
-
-<style>
-  .card{
-    margin-bottom: 20px;
-  }
-  
-  a {
-    width: calc(33.2%);
-    color: black;
-    text-decoration: none;
-  }
-
-  img {
-    width: 100%;
-    border-radius: 8px;
-    display: block;
-    height: auto;
-  }
-</style>
