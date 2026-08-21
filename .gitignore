@@ -22,3 +22,14 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# gitignore
+.gitignore
+
+# dead code
+src/components/dead
+src/styles/global-ai.css
+src/styles/global1.css
+src/styles/zbloated-gloabl.css
+src/pages/teaching-old.astro
+src/dead
